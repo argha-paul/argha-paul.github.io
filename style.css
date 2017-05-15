@@ -63,7 +63,7 @@ p {
   font-size: 20px;
   margin:10px 10px;
   padding:10px,10px;
-  text-transform: uppercase;
+  
   border-radius:25px;
 }
 
@@ -74,4 +74,10 @@ p {
     padding:5px;
 	background-color:rgba(109, 255, 138,0.4);
 }
+.link:link {
+	opacity:0.75;
+}
 
+.link:hover {
+	opacity:1.0;
+}
