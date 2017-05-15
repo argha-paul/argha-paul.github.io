@@ -49,15 +49,8 @@ p {
 }
 
 
-
-.header {
-  background-color: rgba(0, 242, 48,0.4);
-}
-
-
-
 .nav {
- 
+  background-color: rgba(0, 242, 48,0.4);
   margin: 0;
   padding: 20px 20px;
 }
@@ -71,7 +64,7 @@ p {
   margin:10px 10px;
   padding:10px,10px;
   text-transform: uppercase;
-  
+  border-radius:25px;
 }
 
 .nav a:link ,.nav a:visited ,.nav a:active {
