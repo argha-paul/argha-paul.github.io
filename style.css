@@ -17,12 +17,13 @@ padding:0;
 h1 {
 	text-align:center;
 	font-family: 'Handlee', cursive;
-	
 	padding:5px;
 	margin:5px;
 	letter-spacing:5px;
 	word-spacing:15px;
 	color:white;
+	animation: comeDown linear 0.5s;
+    animation-fill-mode: forwards;
 }
 
 p {
@@ -36,21 +37,28 @@ p {
 	font-size:25px;
 }
 
+
+
 .container {
-	
 	background: url("bongdrams6.jpg") no-repeat center center;
 	background-size:cover;
 	height:100%;
 	width:100%;
-        overflow: hidden;
-	
+    overflow: hidden;	
 }
-
 
 .nav {
   background-color: rgba(0, 242, 48,0.4);
-  margin: 0;
+  margin:auto;
+  position:relative;
+  top:15px;
+  width:70%;
+  text-align:center;
   padding: 20px 20px;
+  border-radius:30px;
+  border:solid 2px white;
+  animation: comeDown linear 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .nav li {
@@ -59,24 +67,66 @@ p {
   font-family: Georgia,'Raleway', sans-serif;
   font-weight: 600;
   font-size: 20px;
-  margin:10px 10px;
-  padding:10px,10px;
+  margin:10px 30px;
+  padding:10px 10px;
+  
 }
+
+#present {
+	color:#ffff42;
+}
+
+
 
 .nav a:link ,.nav a:visited ,.nav a:active {
 	text-decoration:none;
+	padding:9px;
+	margin:0px;
  }
-
+ 
 .nav a:hover {
-    padding:5px;
+    padding:9px;
+	margin:0px;
 	background-color:rgba(109, 255, 138,0.4);
 	border-radius:25px;
 }
 
+
 .link:link {
-	opacity:0.75;
+	opacity:0.6;
+}
+
+.link img:link {
+	
 }
 
 .link:hover {
 	opacity:1.0;
 }
+
+.link img:hover {
+	animation:swell 0.5s linear;
+	animation-fill-mode:forwards;
+}
+
+@keyframes swell {
+	0% {
+        transform: scale(1);
+	    opacity:0.6;
+	}
+	100% {
+		transform:scale(1.4);
+		opacity:1.0;
+	}
+}
+
+@keyframes comeDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
